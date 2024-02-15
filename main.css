@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  background-image: linear-gradient(to right, #00b09b, #96c93d);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.sub {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+label {
+  background-color: rgb(0, 0, 0);
+  color: #f2ff00;
+  padding: 5px;
+  border-top-right-radius: 20px;
+  transition: 0.4s;
+}
+label:hover {
+  color: rgb(0, 0, 0);
+}
+.clo {
+  color: rgb(247, 247, 0);
+  font-weight: bold;
+  font-size: larger;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #000000;
+  padding: 2px;
+}
+h2 {
+  margin: 0;
+  padding-bottom: 10px;
+  text-align: center;
+}
+form {
+  display: flex;
+  margin: 130px;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, #0088a6, #00b072);
+  border-style: solid;
+  padding: 50px;
+  border-top-right-radius: 20px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 1156px) and (min-width: 800px) {
+  h2 {
+    margin: 0;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  h2:hover {
+    color: aqua;
+    font-style: italic;
+    transform: skewX(25deg);
+    transition-duration: 0.5s;
+  }
+  a:hover {
+    background-color: rgb(228, 249, 0);
+    padding: 20px;
+    color: rgb(0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  h2 {
+    margin: 0;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  h2:hover {
+    color: aqua;
+    font-style: italic;
+    transform: skewX(25deg);
+    transition-duration: 0.5s;
+  }
+  a:hover {
+    color: rgb(255, 234, 0);
+  }
+  a {
+    color: rgb(255, 255, 255);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    list-style-type: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  form {
+    display: flex;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    justify-content: center;
+    border-style: double;
+    border-color: rgb(0, 254, 76);
+    box-shadow: #000000 3px 6px 8px 5px;
+    background-image: linear-gradient(rgb(238, 0, 255), rgb(0, 251, 255));
+    margin: 150px;
+    padding: 30px;
+    border-radius: 20px;
+  }
+  label {
+    background-color: rgb(255, 0, 170);
+    color: #fcfcfc;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    border-top-right-radius: 20px;
+    padding-left: 7px;
+  }
+
+  input {
+    border-style: double;
+    border-color: rgb(255, 0, 115);
+    padding-left: 7px;
+    border-bottom-left-radius: 20px;
+  }
+  .clo {
+    color: #ffffff;
+    background-color: rgb(255, 0, 195);
+    padding: 5px;
+    text-transform: capitalize;
+    border-radius: 0.8em;
+    border-color: #444444;
+    box-shadow: #000000 1px 3px 5px;
+  }
+  .clo:hover {
+    color: rgb(0, 0, 0);
+  }
+  h2 {
+    color: white;
+    text-align: center;
+    text-shadow: #000000 2px 4px 6px;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+}
